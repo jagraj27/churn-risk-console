@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+/* Filters */
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Table */
+
+.customer-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  background: #f9fafb;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Risk badge */
+
+.risk-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.risk-high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.risk-medium {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.risk-low {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Loading / errors */
+
+.message {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.error-message {
+  padding: 20px;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #991b1b;
+}
+
+.error-message button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #991b1b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.detail-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.detail-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-card h2 {
+  margin-top: 0;
+}
+
+.risk-score {
+  margin-top: 20px;
+}
+
+.risk-score strong {
+  font-size: 42px;
+}
+
+.risk-score span {
+  color: #6b7280;
+}
+
+.risk-factors {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.risk-factor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 6px;
+}
+
+.risk-factor p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+.factor-impact {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.profile-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-grid label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.profile-grid span {
+  font-weight: 500;
+}
+
+.customer-link {
+  border: none;
+  background: none;
+  padding: 0;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.customer-link:hover {
+  text-decoration: underline;
+}
+
+.outreach-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.outreach-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.outreach-status {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.outreach-actions button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.outreach-actions button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.outreach-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.resolved-message {
+  margin: 0;
+  color: #15803d;
+  font-weight: 500;
+}
+
+.outreach-error {
+  padding: 12px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #991b1b;
+}
